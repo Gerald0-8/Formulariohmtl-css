@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="formulario animado">
+            <h1 class="titulo">Formulario de Cliente</h1>
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido"><i class="fas fa-user-tag"></i> Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo"><i class="fas fa-envelope"></i> Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono"><i class="fas fa-phone-alt"></i> Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="direccion"><i class="fas fa-map-marker-alt"></i> Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha_nacimiento"><i class="fas fa-calendar-alt"></i> Fecha de nacimiento</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero"><i class="fas fa-venus-mars"></i> Género</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ocupacion"><i class="fas fa-briefcase"></i> Ocupación</label>
+                    <input type="text" id="ocupacion" name="ocupacion" required>
+                </div>
+
+                <button type="submit"> Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Evita que la página se recargue
+    alert(" Usuario registrado correctamente. :p");
+    this.reset(); // Limpia el formulario
+  });
+</script>
+
+</body>
+</html>
