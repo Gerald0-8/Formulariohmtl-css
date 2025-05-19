@@ -6,8 +6,8 @@ body {
     padding: 30px 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* <-- Cambiado de 'center' a 'flex-start' */
-    min-height: 100vh;        /* <-- Mejor que height: 100vh para scroll */
+    align-items: flex-start; 
+    min-height: 100vh; 
     overflow-y: auto;
     
 }
